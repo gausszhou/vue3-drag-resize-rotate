@@ -1,6 +1,6 @@
 {
   "name": "vue3-drag-resize-rotate",
-  "version": "3.0.0-beta.1",
+  "version": "3.0.0-beta.2",
   "description": "A Component for Vue.js 3.0",
   "author": "gausszhou <gausszhou@qq.com>",
   "main": "lib/bundle.esm.js",

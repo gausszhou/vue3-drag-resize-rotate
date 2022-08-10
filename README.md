@@ -17,7 +17,7 @@ npm install  @gausszhou/vue3-drag-resize-rotate
 import { createApp } from "vue";
 
 import VueDragReSizeRotate from "@gausszhou/vue3-drag-resize-rotate";
-import VueDragReSizeRotate from "@gausszhou/vue3-drag-resize-rotate/lib/bundle.ems.css";
+import "@gausszhou/vue3-drag-resize-rotate/lib/bundle.ems.css";
 
 const app = createApp(App);
 
