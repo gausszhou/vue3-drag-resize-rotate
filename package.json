@@ -16,7 +16,7 @@
   "scripts": {
     "dev": "node prebuild.js && vue-cli-service serve",
     "build": "node prebuild.js && vue-cli-service build",
-    "build:umd": "webpack --config webpack.lib.js",
+    "build:umd": "webpack --config webpack.config.js",
     "build:esm": "rollup --config rollup.config.js",
     "format": "prettier --write src/**/*.{vue,js}",
     "lint": "vue-cli-service lint",
