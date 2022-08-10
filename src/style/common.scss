@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ // 滚动条
+#menu::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+#menu::-webkit-scrollbar-track {
+  background: #f7f7f7;
+ 
+}
+
+#menu::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 8px;
+}
+
+
+// 文字对齐
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// 首页
+#app {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#menu {
+  width: 275px;
+  min-width: 200px;
+  max-width: 500px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .el-menu {
+    border: none;
+
+    .el-submenu__title {
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .el-menu-item {
+      height: 28px;
+      line-height: 28px;
+    }
+  }
+}
+
+#view {
+  flex: 1;
+  min-width: 500px;
+  padding: 10px 15px 0 15px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.drag-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 5px;
+  z-index: 99;
+  border-left: 1px solid #ccc;
+  cursor: ew-resize
+}
+
+.view-box {
+  width: 100%;
+}
+
+#toolbar {
+  left: 0;
+  top: 0;
+  height: 24px;
+  padding: 5px;
+  background-color: #f7f7f7;
+  border: 1px solid #cccccc;
+  border-bottom: none;
+  z-index: 999;
+}
+
+.container {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #cccccc;
+  position: relative;
+  box-sizing: border-box
+}
+
+.vdr {
+  border: 1px dashed;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex_1 {
+  flex: 1;
+}
+
+
+.ml_10 {
+  margin-left: 10px;
+}
