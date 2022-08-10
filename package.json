@@ -1,6 +1,6 @@
 {
   "name": "@gausszhou/vue3-drag-resize-rotate",
-  "version": "3.0.0-beta.3",
+  "version": "3.0.0-beta.4",
   "description": "A Component for Vue.js 3.0",
   "author": "gausszhou <gausszhou@qq.com>",
   "main": "lib/bundle.esm.js",
@@ -13,6 +13,11 @@
   "files": [
     "/lib/*.{js,css}"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gausszhou/vue3-drag-resize-rotate.git"
+  },
+  "homepage": "https://github.com/gausszhou/vue3-drag-resize-rotate#readme",
   "scripts": {
     "dev": "node prebuild.js && vue-cli-service serve",
     "build": "node prebuild.js && vue-cli-service build",
