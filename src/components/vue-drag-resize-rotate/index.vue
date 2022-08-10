@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { $on, $off, $once, $emit } from "./utils/gogocodeTransfer";
+import {  $emit } from "./utils/gogocodeTransfer";
 import { matchesSelectorToParentElements, getComputedSize, addEvent, removeEvent } from "./utils/dom";
 import { computeWidth, computeHeight, restrictToBounds, snapToGrid, rotatedPoint, getAngle } from "./utils/fns";
 
@@ -65,7 +65,6 @@ export const userSelectAuto = {
 let eventsFor = events.mouse;
 
 export default {
-  replace: true,
   name: "vue-drag-resize-rotate",
   props: {
     className: {
@@ -553,10 +552,8 @@ export default {
     },
   },
   created: function () {
-    // eslint-disable-next-line 无效的prop：minWidth不能大于maxWidth
     if (this.maxWidth && this.minWidth > this.maxWidth)
       console.warn("[Vdr warn]: Invalid prop: minWidth cannot be greater than maxWidth");
-    // eslint-disable-next-line 无效prop：minHeight不能大于maxHeight'
     if (this.maxWidth && this.minHeight > this.maxHeight)
       console.warn("[Vdr warn]: Invalid prop: minHeight cannot be greater than maxHeight");
     this.elmX = 0;
@@ -600,7 +597,7 @@ export default {
     //  窗口变化时，检查容器大小
     addEvent(window, "resize", this.checkParentSize);
   },
-  beforeDestroy: function () {
+  beforeUnmount: function () {
     removeEvent(document.documentElement, "mousedown", this.deselect);
     removeEvent(document.documentElement, "touchstart", this.handleUp);
     removeEvent(document.documentElement, "mousemove", this.move);
@@ -949,14 +946,14 @@ export default {
     },
     // 外部传参改动x
     moveHorizontally(val) {
-      const [deltaX, _] = snapToGrid(this.grid, val, this.top, this.scale);
+      const [deltaX, ] = snapToGrid(this.grid, val, this.top, this.scale);
       const left = restrictToBounds(deltaX, this.bounds.minLeft, this.bounds.maxLeft);
       this.left = left;
       this.right = this.parentWidth - this.width - left;
     },
     // 外部传参改动y
     moveVertically(val) {
-      const [_, deltaY] = snapToGrid(this.grid, this.left, val, this.scale);
+      const [, deltaY] = snapToGrid(this.grid, this.left, val, this.scale);
       const top = restrictToBounds(deltaY, this.bounds.minTop, this.bounds.maxTop);
       this.top = top;
       this.bottom = this.parentHeight - this.height - top;
@@ -1117,7 +1114,7 @@ export default {
       $emit(this, "resizing", this.left, this.top, this.width, this.height);
     },
     changeWidth(val) {
-      const [newWidth, _] = snapToGrid(this.grid, val, 0, this.scale);
+      const [newWidth, ] = snapToGrid(this.grid, val, 0, this.scale);
       // const right = restrictToBounds(
       //   this.parentWidth - newWidth - this.left,
       //   this.bounds.minRight,
@@ -1136,7 +1133,7 @@ export default {
       this.height = height;
     },
     changeHeight(val) {
-      const [_, newHeight] = snapToGrid(this.grid, 0, val, this.scale);
+      const [, newHeight] = snapToGrid(this.grid, 0, val, this.scale);
       // const bottom = restrictToBounds(
       //   this.parentHeight - newHeight - this.top,
       //   this.bounds.minBottom,
@@ -1458,7 +1455,7 @@ export default {
     },
     // 修复 正则获取left与top  string.match(/[\d|\.]+/g)
     formatTransformVal(string) {
-      let [left, top, rotate = 0] = string.match(/[\d|\.]+/g);
+      let [left, top, rotate = 0] = string.match(/[\d|.]+/g);
       if (top === undefined) top = 0;
       return [Number(left), Number(top), rotate];
     },

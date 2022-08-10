@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div id="menu" :style="style">
-      <el-menu class="el-menu-dom" :default-active="active">
-        <el-submenu v-for="(item, index) in menuData" :key="index" :index="index + 1 + ''">
-          <template >
+      <el-menu  :default-active="active">
+        <el-sub-menu v-for="(item, index) in menuData" :key="index" :index="index + 1 + ''">
+          <template #title>
             <i :class="item.icon"></i>
             {{ item.label }}
           </template>
@@ -15,7 +15,7 @@
           >
             {{ val.label }}
           </el-menu-item>
-        </el-submenu>
+        </el-sub-menu>
       </el-menu>
     </div>
     <div id="view">
@@ -33,6 +33,7 @@ import hljs from "highlight.js";
 import "highlight.js/styles/github.css";
 import GithubBadge from "@/components/github-badge";
 import menuData from "./menu.js";
+import http from "./api/http";
 
 export default {
   name: "app",
@@ -114,7 +115,7 @@ export default {
     },
     getMarkdown(path) {
       let params = path.slice(1);
-      this.$http.getMarkdown(params).then(res => {
+      http.getMarkdown(params).then(res => {
         this.markdownHTML = this.markdownRender.render(res.data);
       });
     }
@@ -123,6 +124,9 @@ export default {
 </script>
 
 <style scoped>
+#app {
+  width: 100%;
+}
 .title {
   margin-top: 0.5rem;
 }

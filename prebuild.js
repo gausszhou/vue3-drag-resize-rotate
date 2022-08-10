@@ -30,7 +30,6 @@ const path = require("path");
       let floderpath = path.dirname(filePath)
       if(!fs.existsSync(floderpath)) fs.mkdirSync(floderpath,{ recursive: true })
       fs.writeFileSync(filePath, mergeContent)
-      
     }
   });
 

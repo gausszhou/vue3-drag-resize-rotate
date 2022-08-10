@@ -1,24 +1,35 @@
 # vue3-drag-resize-rotate
 
-## Project setup
-```
-yarn install
+ 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE) [![Npm Package](https://img.shields.io/npm/v/@gausszhou/vue3-drag-resize-rotate.svg)](https://www.npmjs.com/package/@gausszhou/vue3-drag-resize-rotate)
+
+## Live Demo
+
+[中文在线演示地址](https://gausszhou.github.io/vue-drag-resize-rotate)
+
+## Quick Start
+
+```shell
+npm install  @gausszhou/vue3-drag-resize-rotate
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+```js
+import { createApp } from "vue";
+import VueDragReSizeRotate from "@gausszhou/vue3-drag-resize-rotate";
+
+const app = createApp(App);
+// 请使用大驼峰
+app.component("VueDragReSizeRotate", VueDragReSizeRotate);
+app.mount("#app");
+
 ```
 
-### Compiles and minifies for production
-```
-yarn build
+## Code Reference
+
+```shell
+https://github.com/gausszhou/vue-drag-resize-rotate
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+## Thanks
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+感谢 `gogocode` 提供的代码转换服务
