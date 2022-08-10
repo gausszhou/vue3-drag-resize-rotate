@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 const viewContext = require.context("@/views", true, /.vue$/);
 
@@ -30,7 +30,7 @@ const routes = [
 
 
 const router =createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(process.env.BASE_URL || "/vue3-drag-resize-rotate/"),
   routes
 });
 
