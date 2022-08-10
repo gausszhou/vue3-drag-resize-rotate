@@ -5,7 +5,7 @@
 
 ## Live Demo
 
-[中文在线演示地址](https://gausszhou.github.io/vue-drag-resize-rotate)
+[中文在线演示地址](https://gausszhou.github.io/vue3-drag-resize-rotate)
 
 ## Quick Start
 
