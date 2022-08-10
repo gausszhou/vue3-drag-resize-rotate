@@ -15,13 +15,16 @@ npm install  @gausszhou/vue3-drag-resize-rotate
 
 ```js
 import { createApp } from "vue";
+
 import VueDragReSizeRotate from "@gausszhou/vue3-drag-resize-rotate";
+import VueDragReSizeRotate from "@gausszhou/vue3-drag-resize-rotate/lib/bundle.ems.css";
 
 const app = createApp(App);
+
 // 请使用大驼峰
 app.component("VueDragReSizeRotate", VueDragReSizeRotate);
-app.mount("#app");
 
+app.mount("#app");
 ```
 
 ## Code Reference

@@ -3,25 +3,28 @@
   "version": "3.0.0-beta.1",
   "description": "A Component for Vue.js 3.0",
   "author": "gausszhou <gausszhou@qq.com>",
-  "main": "lib/bundle.js",
-  "export": "lib/bundle.js",
+  "main": "lib/bundle.esm.js",
+  "export": "lib/bundle.esm.js",
   "private": false,
   "publishConfig": {
     "access": "public"
   },
   "license": "MIT",
   "files": [
-    "/lib/*.js"
+    "/lib/*.{js,css}"
   ],
   "scripts": {
     "dev": "node prebuild.js && vue-cli-service serve",
     "build": "node prebuild.js && vue-cli-service build",
-    "build:lib": "webpack --config=webpack.lib.js",
+    "build:umd": "webpack --config webpack.lib.js",
+    "build:esm": "rollup --config rollup.config.js",
     "format": "prettier --write src/**/*.{vue,js}",
     "lint": "vue-cli-service lint",
     "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
   "peerDependencies": {
     "vue": "^3.2.37"
   },
@@ -30,7 +33,7 @@
     "@vue/cli-plugin-babel": "~4.5.19",
     "@vue/cli-plugin-eslint": "~4.5.19",
     "@vue/cli-service": "~4.5.19",
-    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/compiler-sfc": "^3.2.37",
     "@vue/reactivity": "^3.2.37",
     "axios": "^0.27.2",
     "babel-eslint": "^10.1.0",
@@ -41,9 +44,16 @@
     "jest": "^28.1.3",
     "markdown-it": "^13.0.1",
     "node-sass": "^4.14.1",
+    "rollup": "^2.77.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-vue": "^6.0.0",
     "sass-loader": "^8.0.2",
+    "style-loader": "^2.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-loader": "^17.0.0",
-    "vue-router": "^4.1.3"
+    "vue-router": "^4.1.3",
+    "webpack-cli": "^4.10.0"
   },
   "eslintConfig": {
     "root": true,

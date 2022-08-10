@@ -7,8 +7,8 @@ module.exports = {
   entry: path.resolve(__dirname, "src/index"),
   output: {
     path: path.resolve(__dirname, "lib"),
-    library: "bundle.js", //
-    filename: "bundle.js",
+    library: "bundle.umd.js", //
+    filename: "bundle.umd.js",
     libraryTarget: "umd"
   },
   module: {
