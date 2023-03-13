@@ -11,10 +11,10 @@
       Toggle draggable
     </div>
     <div class="container">
-      <VueDragReSizeRotate :draggable="draggable">
+      <VueDragResizeRotate :draggable="draggable">
         <p v-if="draggable">现在可以被拖动位置了，走起!!!</p>
         <p v-else>虽然不能拖动位置，但是可以调整大小(默认开启)</p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

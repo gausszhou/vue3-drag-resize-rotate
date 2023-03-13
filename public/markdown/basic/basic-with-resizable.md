@@ -11,10 +11,10 @@
       Toggle resizable
     </div>
     <div class="container">
-      <VueDragReSizeRotate :resizable="resizable">
+      <VueDragResizeRotate :resizable="resizable">
         <p v-if="resizable">现在可以调整大小了</p>
         <p v-else>现在不可以调整大小</p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

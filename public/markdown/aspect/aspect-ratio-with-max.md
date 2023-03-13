@@ -8,7 +8,7 @@
   <div class="view-box">
     <div id="toolbar">Size: {{ width }} x {{ height }}</div>
     <div class="container">
-      <VueDragReSizeRotate :lock-aspect-ratio="true" :maxWidth="300" :maxHeight="250" @resizing="onResizing">
+      <VueDragResizeRotate :lock-aspect-ratio="true" :maxWidth="300" :maxHeight="250" @resizing="onResizing">
         <p>
           Keep aspect ratio and set
           <b>maxWidth</b>
@@ -16,7 +16,7 @@
           <b>maxHeight</b>
           to 250.
         </p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

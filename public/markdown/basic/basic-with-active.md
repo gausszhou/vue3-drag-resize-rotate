@@ -13,20 +13,20 @@
       Toggle Active2
     </div>
     <div class="container">
-      <VueDragReSizeRotate :active="active1">
+      <VueDragResizeRotate :active="active1">
         <p>
           外部组件通过控制
           <b>:active</b>
           prop来控制组件的激活状态
         </p>
-      </VueDragReSizeRotate>
-      <VueDragReSizeRotate :active="active2">
+      </VueDragResizeRotate>
+      <VueDragResizeRotate :active="active2">
         <p>
           外部组件通过控制
           <b>:active</b>
           prop来控制组件的激活状态
         </p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

@@ -18,9 +18,9 @@
       <input type="number" v-model.number="h" />
     </div>
     <div class="container">
-      <VueDragReSizeRotate :x="x" :y="y" :w="w" :h="h" @resizing="onResize" @dragging="onDrag">
+      <VueDragResizeRotate :x="x" :y="y" :w="w" :h="h" @resizing="onResize" @dragging="onDrag">
         <p>Basic controlled component.</p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

@@ -9,9 +9,9 @@
     <div id="toolbar">父级限制+网格+偏移</div>
     <div class="container">
       <div :style="style">
-        <VueDragReSizeRotate :parent="true" :grid="[20, 20]" :x="10" :y="10" :h="400" :w="400">
+        <VueDragResizeRotate :parent="true" :grid="[20, 20]" :x="10" :y="10" :h="400" :w="400">
           <p>You cannot move me or resize me outside my parent. And my edges cannot touch the parent element.</p>
-        </VueDragReSizeRotate>
+        </VueDragResizeRotate>
       </div>
     </div>
   </div>

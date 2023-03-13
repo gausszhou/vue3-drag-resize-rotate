@@ -8,9 +8,9 @@
     <div id="toolbar">父级+旋转</div>
     <div class="container">
       <div :style="style">
-        <VueDragReSizeRotate :parent="true" :grid="[20, 20]" :rotatable="true" :r="45">
+        <VueDragResizeRotate :parent="true" :grid="[20, 20]" :rotatable="true" :r="45">
           <p>You cannot move me or resize me outside my parent.</p>
-        </VueDragReSizeRotate>
+        </VueDragResizeRotate>
       </div>
     </div>
   </div>

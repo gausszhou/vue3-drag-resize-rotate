@@ -16,9 +16,9 @@
       </label>
     </div>
     <div class="container">
-      <VueDragReSizeRotate :axis="axis">
+      <VueDragResizeRotate :axis="axis">
         <p>Draggable on {{ axis }} axis.</p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

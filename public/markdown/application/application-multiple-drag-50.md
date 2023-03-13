@@ -18,7 +18,7 @@
       </label>
     </div>
     <div class="container">
-      <VueDragReSizeRotate
+      <VueDragResizeRotate
         class-name-active="my-active-class"
         ref="vdrr"
         v-for="element in elements"
@@ -33,7 +33,7 @@
         @dragstop="(left, top) => dragstop(element.id, left, top)"
       >
         <p>{{ element.text }}</p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

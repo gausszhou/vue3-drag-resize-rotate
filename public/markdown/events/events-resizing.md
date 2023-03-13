@@ -8,13 +8,13 @@
   <div class="view-box">
     <div id="toolbar">调整大小触发事件resizing和停止调整resizestop</div>
     <div class="container">
-      <VueDragReSizeRotate :w="200" :h="200" :x="0" :y="0" :r="0" @resizing="onResize" @resizestop="onResizeStop">
+      <VueDragResizeRotate :w="200" :h="200" :x="0" :y="0" :r="0" @resizing="onResize" @resizestop="onResizeStop">
         <p>
           {{ resizing ? "你正在调整大小" : "这个大小还行" }}
           <br />
           X: {{ x }} / Y: {{ y }} - Width: {{ width }} / Height: {{ height }}
         </p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

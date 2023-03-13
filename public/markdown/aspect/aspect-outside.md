@@ -13,13 +13,13 @@
       <input type="number" v-model="outsideAspectRatio" />
     </div>
     <div class="container">
-      <VueDragReSizeRotate :lock-aspect-ratio="ratio" :outsideAspectRatio="outsideAspectRatio">
+      <VueDragResizeRotate :lock-aspect-ratio="ratio" :outsideAspectRatio="outsideAspectRatio">
         <p>
           Keep aspect ratio using
           <b>:lock-aspect-ratio</b>
           prop.
         </p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

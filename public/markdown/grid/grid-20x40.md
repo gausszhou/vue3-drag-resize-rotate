@@ -9,9 +9,9 @@
     <div id="toolbar">Size: {{ width }} x {{ height }}</div>
     <div class="container">
       <div :style="style">
-        <VueDragReSizeRotate :grid="[20, 40]" :x="0" :y="0" @resizing="onResizing">
+        <VueDragResizeRotate :grid="[20, 40]" :x="0" :y="0" @resizing="onResizing">
           <p>Grid 20x20 starting from the top-left corner</p>
-        </VueDragReSizeRotate>
+        </VueDragResizeRotate>
       </div>
     </div>
   </div>

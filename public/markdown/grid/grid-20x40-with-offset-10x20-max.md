@@ -8,7 +8,7 @@
     <div id="toolbar">Size: {{ width }} x {{ height }}</div>
     <div class="container">
       <div :style="style">
-        <VueDragReSizeRotate
+        <VueDragResizeRotate
           :grid="[20, 40]"
           :x="10"
           :y="20"
@@ -17,7 +17,7 @@
           @resizing="onResizing"
         >
           <p>Grid 20x40 starting with a 10x20 offset and max height, max width values equal to 290.</p>
-        </VueDragReSizeRotate>
+        </VueDragResizeRotate>
       </div>
     </div>
   </div>

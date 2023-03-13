@@ -8,12 +8,12 @@
   <div class="view-box">
     <div id="toolbar">拖动时具有自定义类名的组件</div>
     <div class="container">
-      <VueDragReSizeRotate class-name-dragging="my-dragging-class" class-name="my-class">
+      <VueDragResizeRotate class-name-dragging="my-dragging-class" class-name="my-class">
         <p>
           你也可以设置组件处于拖拽式的类名
           <b>class-name-dragging</b>
         </p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

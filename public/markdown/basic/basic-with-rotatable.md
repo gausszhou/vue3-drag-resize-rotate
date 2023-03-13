@@ -13,7 +13,7 @@
       Toggle resizable
     </div>
     <div class="container">
-      <VueDragReSizeRotate
+      <VueDragResizeRotate
         :rotatable="rotatable"
         :resizable="resizable"
         @resizing="resizing"
@@ -23,7 +23,7 @@
       >
         <p v-if="rotatable">现在可以旋转，旋转角度为{{ angle }}</p>
         <p v-else>现在不可以旋转</p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

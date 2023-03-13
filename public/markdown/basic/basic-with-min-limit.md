@@ -13,7 +13,7 @@
       <input type="number" v-model.number="minHeight" />
     </div>
     <div class="container">
-      <VueDragReSizeRotate
+      <VueDragResizeRotate
         :min-width="minWidth"
         :min-height="minHeight"
         :w="200"
@@ -29,7 +29,7 @@
           属性
           <p>w:{{ w }},h:{{ h }}</p>
         </div>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

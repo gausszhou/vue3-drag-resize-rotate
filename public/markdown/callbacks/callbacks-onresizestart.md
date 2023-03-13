@@ -14,7 +14,7 @@
       </p>
     </div>
     <div class="container">
-      <VueDragReSizeRotate :on-resize-start="onResizeStart"></VueDragReSizeRotate>
+      <VueDragResizeRotate :on-resize-start="onResizeStart"></VueDragResizeRotate>
     </div>
   </div>
 </template>

@@ -11,7 +11,7 @@
       <span class="ml_10">scaleRatio</span>
     </div>
     <div class="container" :style="containerStyle()">
-      <VueDragReSizeRotate
+      <VueDragResizeRotate
         :rotatable="rotatable"
         :x="position.x"
         :y="position.y"
@@ -27,7 +27,7 @@
         <p>位置为({{ position.x }},{{ position.y }})</p>
         <p>大小为({{ position.w }},{{ position.h }})</p>
         <p>角度为{{ angle }}</p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>
