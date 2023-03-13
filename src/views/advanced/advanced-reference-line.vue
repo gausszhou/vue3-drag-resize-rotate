@@ -2,7 +2,7 @@
   <div class="view-box">
     <div id="toolbar">对齐时出现辅助线</div>
     <div class="container">
-      <VueDragReSizeRotate
+      <VueDragResizeRotate
         :w="200"
         :h="200"
         :parent="true"
@@ -14,8 +14,8 @@
         :snapTolerance="10"
         @refLineParams="getRefLineParams"
         style="background-color: rgb(174, 213, 129)"
-      ></VueDragReSizeRotate>
-      <VueDragReSizeRotate
+      ></VueDragResizeRotate>
+      <VueDragResizeRotate
         :w="200"
         :h="200"
         :parent="true"
@@ -28,8 +28,8 @@
         :snapTolerance="10"
         @refLineParams="getRefLineParams"
         style="background-color: rgb(129, 212, 250)"
-      ></VueDragReSizeRotate>
-      <VueDragReSizeRotate
+      ></VueDragResizeRotate>
+      <VueDragResizeRotate
         :w="200"
         :h="200"
         :parent="true"
@@ -42,7 +42,7 @@
         :snapTolerance="10"
         @refLineParams="getRefLineParams"
         style="background-color: rgb(239, 154, 154)"
-      ></VueDragReSizeRotate>
+      ></VueDragResizeRotate>
       <span
         class="ref-line v-line"
         v-for="(item, index) in vLine"

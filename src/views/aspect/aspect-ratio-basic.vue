@@ -5,13 +5,13 @@
       Toggle Lock Aspect Ratio
     </div>
     <div class="container">
-      <VueDragReSizeRotate :lock-aspect-ratio="ratio">
+      <VueDragResizeRotate :lock-aspect-ratio="ratio">
         <p>
           Keep aspect ratio using
           <b>:lock-aspect-ratio</b>
           prop.
         </p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

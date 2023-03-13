@@ -3,7 +3,7 @@
     <div id="toolbar">Size: {{ width }} x {{ height }}</div>
     <div class="container">
       <div :style="style">
-        <VueDragReSizeRotate
+        <VueDragResizeRotate
           :parent="true"
           :max-width="290"
           :max-height="290"
@@ -17,7 +17,7 @@
             <b>maxHeight</b>
             equal to 290.
           </p>
-        </VueDragReSizeRotate>
+        </VueDragResizeRotate>
       </div>
     </div>
   </div>

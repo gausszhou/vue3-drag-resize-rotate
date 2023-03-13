@@ -12,20 +12,18 @@ const app = createApp(App);
 
 // import VueDragReSizeRotate from "./components/vue-drag-resize-rotate/index.vue";
 
-// success
-import VueDragReSizeRotate from "../lib/bundle.esm.js";
+// esm
+import VueDragResizeRotate from "../lib/bundle.esm.js";
 import  "../lib/bundle.esm.css";
 
-// failure
-// import VueDragReSizeRotate from "../lib/bundle.umd.js";
-
-app.component("VueDragReSizeRotate", VueDragReSizeRotate);
-
+// use
+app.use(VueDragResizeRotate);
+// or component
+app.component(VueDragResizeRotate.name, VueDragResizeRotate);
 
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component);
 }
-
 
 app.use(router);
 app.use(ElementPlus);

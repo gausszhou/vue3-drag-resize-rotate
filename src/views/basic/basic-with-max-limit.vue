@@ -7,7 +7,7 @@
       <input type="number" v-model.number="maxHeight" />
     </div>
     <div class="container">
-      <VueDragReSizeRotate
+      <VueDragResizeRotate
         :max-width="maxWidth"
         :max-height="maxHeight"
         :w="200"
@@ -23,7 +23,7 @@
           属性
           <p>w:{{ w }},h:{{ h }}</p>
         </div>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

@@ -8,7 +8,7 @@
       </p>
     </div>
     <div class="container">
-      <VueDragReSizeRotate :on-resize="onResize"></VueDragReSizeRotate>
+      <VueDragResizeRotate :on-resize="onResize"></VueDragResizeRotate>
     </div>
   </div>
 </template>

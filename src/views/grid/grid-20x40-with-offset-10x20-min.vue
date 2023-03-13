@@ -3,9 +3,9 @@
     <div id="toolbar">Size: {{ width }} x {{ height }}</div>
     <div class="container">
       <div :style="style">
-        <VueDragReSizeRotate :grid="[20, 40]" :x="10" :y="20" :minHeight="30" :minWidth="30">
+        <VueDragResizeRotate :grid="[20, 40]" :x="10" :y="20" :minHeight="30" :minWidth="30">
           <p>Grid 20x40 starting with a 10x20 offset and min height, min width values equal to 30.</p>
-        </VueDragReSizeRotate>
+        </VueDragResizeRotate>
       </div>
     </div>
   </div>

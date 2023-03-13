@@ -2,7 +2,7 @@
   <div class="view-box">
     <div id="toolbar">位置吸附对齐</div>
     <div class="container">
-      <VueDragReSizeRotate
+      <VueDragResizeRotate
         :w="200"
         :h="200"
         :parent="true"
@@ -12,8 +12,8 @@
         :snap="true"
         :snapTolerance="20"
         style="background-color: rgb(174, 213, 129)"
-      ></VueDragReSizeRotate>
-      <VueDragReSizeRotate
+      ></VueDragResizeRotate>
+      <VueDragResizeRotate
         :w="200"
         :h="200"
         :parent="true"
@@ -23,7 +23,7 @@
         :snap="true"
         :snapTolerance="20"
         style="background-color: rgb(129, 212, 250)"
-      ></VueDragReSizeRotate>
+      ></VueDragResizeRotate>
     </div>
   </div>
 </template>

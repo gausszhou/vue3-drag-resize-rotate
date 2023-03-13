@@ -3,9 +3,9 @@
     <div id="toolbar"></div>
     <div class="container">
       <div :style="style">
-        <VueDragReSizeRotate :grid="[20, 20]" :parent="true" :lock-aspect-ratio="true">
+        <VueDragResizeRotate :grid="[20, 20]" :parent="true" :lock-aspect-ratio="true">
           <p>Keep aspect ratio, grid and parent costrained.</p>
-        </VueDragReSizeRotate>
+        </VueDragResizeRotate>
       </div>
     </div>
   </div>

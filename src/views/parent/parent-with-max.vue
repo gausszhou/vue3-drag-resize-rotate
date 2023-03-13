@@ -2,7 +2,7 @@
   <div class="view-box">
     <div id="toolbar">Size: {{ width }} x {{ height }}</div>
     <div class="container">
-      <VueDragReSizeRotate :parent="true" :max-width="300" :max-height="300" @resizing="onResizing">
+      <VueDragResizeRotate :parent="true" :max-width="300" :max-height="300" @resizing="onResizing">
         <p>
           Component costrained in parent with
           <b>maxWidth</b>
@@ -10,7 +10,7 @@
           <b>maxHeight</b>
           equal to 300.
         </p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

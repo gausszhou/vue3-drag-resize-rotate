@@ -12,7 +12,7 @@
     </div>
     <div class="container">
       <div :style="style">
-        <VueDragReSizeRotate
+        <VueDragResizeRotate
           :parent="true"
           :grid="[20, 20]"
           :x="x"
@@ -23,7 +23,7 @@
           @resizing="onResize"
         >
           <p>You cannot move me or resize me outside my parent.</p>
-        </VueDragReSizeRotate>
+        </VueDragResizeRotate>
       </div>
     </div>
   </div>

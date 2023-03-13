@@ -1,6 +1,5 @@
 # vue3-drag-resize-rotate
 
- 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE) [![Npm Package](https://img.shields.io/npm/v/@gausszhou/vue3-drag-resize-rotate.svg)](https://www.npmjs.com/package/@gausszhou/vue3-drag-resize-rotate)
 
 ## Live Demo
@@ -16,13 +15,15 @@ npm install  @gausszhou/vue3-drag-resize-rotate
 ```js
 import { createApp } from "vue";
 
-import VueDragReSizeRotate from "@gausszhou/vue3-drag-resize-rotate";
+import VueDragResizeRotate from "@gausszhou/vue3-drag-resize-rotate";
 import "@gausszhou/vue3-drag-resize-rotate/lib/bundle.ems.css";
 
 const app = createApp(App);
 
-// 请使用大驼峰
-app.component("VueDragReSizeRotate", VueDragReSizeRotate);
+// use
+app.use(VueDragResizeRotate);
+// or component
+// app.component(VueDragResizeRotate.name, VueDragResizeRotate);
 
 app.mount("#app");
 ```

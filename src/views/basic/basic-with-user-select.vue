@@ -7,7 +7,7 @@
       Toggle disableUserSelect2
     </div>
     <div class="container">
-      <VueDragReSizeRotate :parent="true" :disableUserSelect="disableUserSelect1">
+      <VueDragResizeRotate :parent="true" :disableUserSelect="disableUserSelect1">
         <p>
           你
           {{ disableUserSelect1 ? "不可以" : "可以" }}
@@ -16,8 +16,8 @@
           <b>:disableUserSelect</b>
           prop equal to {{ disableUserSelect1 }}.
         </p>
-      </VueDragReSizeRotate>
-      <VueDragReSizeRotate :parent="true" :disableUserSelect="disableUserSelect2">
+      </VueDragResizeRotate>
+      <VueDragResizeRotate :parent="true" :disableUserSelect="disableUserSelect2">
         <p>
           你
           {{ disableUserSelect2 ? "不可以" : "可以" }}
@@ -26,7 +26,7 @@
           <b>:disableUserSelect</b>
           prop equal to {{ disableUserSelect2 }}.
         </p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

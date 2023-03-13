@@ -65,7 +65,7 @@ export const userSelectAuto = {
 let eventsFor = events.mouse;
 
 export default {
-  name: "vue-drag-resize-rotate",
+  name: "VueDragResizeRotate",
   props: {
     className: {
       type: String,

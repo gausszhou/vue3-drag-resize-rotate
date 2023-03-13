@@ -7,14 +7,14 @@
       </label>
     </div>
     <div class="container">
-      <VueDragReSizeRotate :handles="enabledHandles" :prevent-deactivation="true" :w="250" :h="250">
+      <VueDragResizeRotate :handles="enabledHandles" :prevent-deactivation="true" :w="250" :h="250">
         <p>Enable/disable handles.</p>
         <ul>
           <li v-for="handle in Object.keys(handles)" :key="handle">
             {{ handle }} - {{ handles[handle] ? "&check;" : "&cross;" }}
           </li>
         </ul>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>
@@ -45,7 +45,7 @@ export default {
 
 <style scoped>
 .vdr ul,
-.VueDragReSizeRotate ul {
+.VueDragResizeRotate ul {
   margin: 0 0 0 25px;
 }
 </style>

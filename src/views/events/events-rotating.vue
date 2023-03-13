@@ -2,7 +2,7 @@
   <div class="view-box">
     <div id="toolbar">调整旋转角度触发事件rotating和rotatestop</div>
     <div class="container">
-      <VueDragReSizeRotate
+      <VueDragResizeRotate
         :w="200"
         :h="200"
         :x="0"
@@ -16,7 +16,7 @@
           <br />
           Rotate: {{ rotate }}
         </p>
-      </VueDragReSizeRotate>
+      </VueDragResizeRotate>
     </div>
   </div>
 </template>

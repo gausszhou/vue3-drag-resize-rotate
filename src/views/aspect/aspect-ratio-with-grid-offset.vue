@@ -3,9 +3,9 @@
     <div id="toolbar"></div>
     <div class="container">
       <div :style="style">
-        <VueDragReSizeRotate :grid="[20, 40]" :x="10" :y="20" :minh="30" :minw="30" :lock-aspect-ratio="true">
+        <VueDragResizeRotate :grid="[20, 40]" :x="10" :y="20" :minh="30" :minw="30" :lock-aspect-ratio="true">
           <p>Aspect ratio in Grid 20x40 starting with a 10x20 offset</p>
-        </VueDragReSizeRotate>
+        </VueDragResizeRotate>
       </div>
     </div>
   </div>
