@@ -28,6 +28,32 @@ app.use(VueDragResizeRotate);
 app.mount("#app");
 ```
 
+## Props
+
+| Prop      | Description   |
+| --------- | ------------- |
+| draggable | Enable drag   |
+| resizable | Enable resize |
+| rotatable | Enable rotate |
+| w         | width         |
+| h         | height        |
+| x         | left          |
+| y         | top           |
+| z         | Zindex        |
+| r         | rotate angle  |
+
+## Emits
+
+| Prop          | Description              |
+| ------------- | ------------------------ |
+| dragging      | on dragging              |
+| dragstop      | on drag stop             |
+| resizing      | on resizing              |
+| resizestop    | on resize stop           |
+| rotating      | on rotating              |
+| rotatestop    | on rotate stop           |
+| refLineParams | on reference line change |
+
 ## Code Reference
 
 ```shell
