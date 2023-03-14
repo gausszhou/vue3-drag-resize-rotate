@@ -44,7 +44,7 @@ app.mount("#app");
 
 ## Emits
 
-| Prop          | Description              |
+| Event          | Description              |
 | ------------- | ------------------------ |
 | dragging      | on dragging              |
 | dragstop      | on drag stop             |
