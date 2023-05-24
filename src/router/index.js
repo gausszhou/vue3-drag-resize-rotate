@@ -1,17 +1,22 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-
-const viewContext = require.context("@/views", true, /.vue$/);
-
+import path from 'path'
+//const viewContext = require.context("@/views", true, /.vue$/);
+const viewContext = import.meta.glob('@/views/**/*/*.vue')
 // 遍历生成路由
 let routerArr = [];
-viewContext.keys().forEach(value => {
-  const path = value.substr(value.indexOf("/"), value.lastIndexOf(".") - 1);
-  const componentLocation = value.substr(value.indexOf(".") + 1, value.lastIndexOf(".") - 1);
-  const componentName = componentLocation.substr(componentLocation.lastIndexOf("/") + 1);
+
+
+
+Object.keys(viewContext).forEach(dest => {
+  const reComponentName = /[^\/]*.vue/g
+  const reViewPath = /views.*/g
+  const path = dest.match(reViewPath)[0].split('/').slice(1).join('/').replace('.vue', '');
+  const componentLocation = dest.match(reViewPath)[0]
+  const componentName = dest.match(reComponentName)[0].split('.')[0];
   routerArr.push({
-    path: path,
+    path: `/${path}`,
     name: componentName,
-    component: () => import(/* webpackChunkName: "alarm" */ `../views${componentLocation}`)
+    component: () => import(dest /* @vite-ignore */)
   });
 });
 
@@ -30,7 +35,7 @@ const routes = [
 
 
 const router =createRouter({
-  history: createWebHashHistory(process.env.BASE_URL || "/vue3-drag-resize-rotate/"),
+  history: createWebHashHistory(import.meta.env.BASE_URL || "/vue3-drag-resize-rotate/"),
   routes
 });
 
