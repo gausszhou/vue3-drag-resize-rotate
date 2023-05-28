@@ -7,7 +7,6 @@ console.log(process.env.NODE_ENV)
 
 export default defineConfig({
     plugins: [vue()],
-    publicDir: process.env.NODE_ENV === 'development' ? 'public' : '/',
     build: {
         target: ['es2020'],
         outDir: 'lib',
