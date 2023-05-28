@@ -21,7 +21,6 @@
   "scripts": {
     "vite:dev": "node prebuild.js && vite dev",
     "vite:build": "node prebuild.js && vite build",
-    "vite:esm": "",
     "format": "prettier --write src/**/*.{vue,js}",
     "lint": "vue-cli-service lint",
     "test": "jest"
