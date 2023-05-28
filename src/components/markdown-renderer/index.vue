@@ -1,6 +1,5 @@
 <template>
     <div class="markdown-render" id="write" v-html="state.markdownHTML"></div>
-    {{ src }}
 </template>
 
 <script setup>
