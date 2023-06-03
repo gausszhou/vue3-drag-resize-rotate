@@ -1,4 +1,9 @@
-# 带拖动句柄的基本组件
+<basicWithDragHandle/>
 
-一个基本组件，只能通过一个句柄拖动，由prop <b>`drag-handle` </b>和一个有效的CSS选择器来指定，只能通过该DOM元素来拖动组件。
+# Basic components with drag handles
 
+A basic component that can only be dragged through a handle, specified by prop <b>`drag-handle` </b> and a valid CSS selector, that can only be dragged through this DOM element.
+
+::: code-group
+<<< @/src/views/basic/basic-with-drag-handle.vue#template[Template]
+:::

@@ -1,4 +1,10 @@
-# 组件是否可以旋转
+<basicWithRotatable/>
 
-一个基本组件，<b>`rotatable` </b> prop设置为`true`，因此它可以旋转角度。
+# Whether the component can be rotated
 
+A basic component with <b>`rotatable` </b> prop set to `true` can be rotated by angle.
+
+::: code-group
+<<< @/src/views/basic/basic-with-rotatable.vue#template[Template]
+<<< @/src/views/basic/basic-with-rotatable.vue#script[Script]
+:::

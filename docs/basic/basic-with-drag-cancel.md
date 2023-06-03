@@ -1,4 +1,9 @@
-# 组件拖动取消的基本组件
+<basicWithDragCancel/>
 
-一个基本组件，无法通过句柄拖动，由prop <b>`drag-cancel` </b>和有效的CSS选择器来指定，该范围无法将无法拖动组件。
+# Basic components for component drag cancellation
 
+A basic component that cannot be dragged by a handle, specified by prop <b>`drag-cancel` </b> and a valid CSS selector, the scope cannot make the component draggable.
+
+::: code-group
+<<< @/src/views/basic/basic-with-drag-cancel.vue#template[Template]
+:::

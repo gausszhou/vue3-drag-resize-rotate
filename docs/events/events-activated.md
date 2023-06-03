@@ -1,4 +1,10 @@
-# 已激活和已停用的事件
+<eventsActivated/>
 
-当组件被激活时，会发出`activated()`事件。 当组件被停用时，会发出`deactivated()`事件。
+# Activated and deactivated events
 
+When the component is activated, the `activated()` event is emitted. When a component is deactivated, the `deactivated()` event is emitted.
+
+::: code-group
+<<< @/src/views/events/events-activated.vue#template[Template]
+<<< @/src/views/events/events-activated.vue#script[Script]
+:::

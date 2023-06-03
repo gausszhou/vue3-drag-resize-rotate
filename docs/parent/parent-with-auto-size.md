@@ -1,2 +1,6 @@
-# 自适应大小 
+<parentWithAutoSize/>
 
+
+::: code-group
+<<< @/src/views/parent/parent-with-auto-size.vue#template[Template]
+:::

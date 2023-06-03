@@ -1,3 +1,10 @@
-# 调整大小时具有自定义类名的组件
+<styleResizing/>
 
-调整大小时具有自定义类名的组件，由prop <b>`class-name-resizing` </b>提供。
+# Components with custom class names when resizing
+
+Component with custom class name when resizing, provided by prop <b>`class-name-resizing` </b>.
+
+::: code-group
+<<< @/src/views/styling/style-resizing.vue#template[Template]
+<<< @/src/views/styling/style-resizing.vue#style[Style]
+:::

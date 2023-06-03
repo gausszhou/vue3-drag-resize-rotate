@@ -1,4 +1,10 @@
-# 使用maxWidth和maxHeight在父级中约束的组件
+<parentWithMax/>
 
-无法在其父元素之外拖动或调整大小的组件，使用<b> maxWidth </b>和<b> maxHeight </b>来限制其大小。
+# Components constrained in parent using maxWidth and maxHeight
 
+Components that cannot be dragged or resized outside of their parent element, use <b>maxWidth</b> and <b>maxHeight</b> to limit their size.
+
+::: code-group
+<<< @/src/views/parent/parent-with-max.vue#template[Template]
+<<< @/src/views/parent/parent-with-max.vue#script[Script]
+:::

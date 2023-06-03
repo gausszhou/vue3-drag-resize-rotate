@@ -1,2 +1,8 @@
-# 阻止用户选中组件内文本
+<basicWithUserSelect/>
 
+# Prevent the user from selecting the text inside the component
+
+::: code-group
+<<< @/src/views/basic/basic-with-user-select.vue#template[Template]
+<<< @/src/views/basic/basic-with-user-select.vue#script[Script]
+:::

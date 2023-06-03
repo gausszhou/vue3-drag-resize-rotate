@@ -1,0 +1,20 @@
+:root {
+    --grid-line-color-light: rgba(255, 255, 255, .05);
+    --grid-line-color-dark: rgba(1, 1, 1, .1)
+}
+
+.dark .view-box .grid {
+    background:
+        linear-gradient(-90deg, var(--grid-line-color-light) 1px, transparent 1px),
+        linear-gradient(var(--grid-line-color-light) 1px, transparent 1px);
+}
+
+.view-box .grid {
+    background-color: #808080;
+    background:
+        linear-gradient(-90deg, var(--grid-line-color-dark) 1px, transparent 1px),
+        linear-gradient(var(--grid-line-color-dark) 1px, transparent 1px);
+    margin: 1em 0 0 0;
+}
+
+

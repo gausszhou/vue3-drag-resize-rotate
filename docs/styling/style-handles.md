@@ -1,5 +1,11 @@
-# 具有自定义类名称句柄的组件
+<styleHandles/>
 
-具有handle的自定义类的组件，随prop <b>`class-name-handle` </b>提供。 这样，您可以单独设置每个手柄的样式。
+# Components with custom class name handles
 
-__记得为句柄类设置`position：absolute`__
+Component with a custom class of handle, provided with prop <b>`class-name-handle` </b>. This way, you can style each handle individually.
+
+__Remember to set `position: absolute`__ for the handle class
+
+::: code-group
+<<< @/src/views/styling/style-handles.vue#template[Template]
+:::

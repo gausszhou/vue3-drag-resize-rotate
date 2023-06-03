@@ -1,4 +1,9 @@
-# 防止停用
+<basicPreventDeactivation/>
 
-一个基本组件，带有<b>`prevent-deactivation` </b> prop，以避免在外部点击时解除活动状态。
+# Prevent deactivation
 
+A base component with a <b>`prevent-deactivation` </b> prop to avoid deactivation on external clicks.
+
+::: code-group
+<<< @/src/views/basic/basic-prevent-deactivation.vue#template[Template]
+:::

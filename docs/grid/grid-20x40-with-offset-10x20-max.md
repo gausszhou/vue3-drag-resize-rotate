@@ -1,3 +1,11 @@
-# 网格20x40像素，具有10x10偏移和maxHeight，maxWidth值
+<grid20x40WithOffset10x20Max/>
 
-如果提供的`maxHeight`和`maxWidth`值高于相应的网格值，则可以注意到调整大小会停止到较低的合适值。 例如，在`x`轴上，尊重`maxWidth`和`grid [x]`约束的最低有效值是80.这同样适用于`y`轴。
+# Grid 20x40 pixels with 10x10 offset and maxHeight, maxWidth values
+
+If the provided `maxHeight` and `maxWidth` values are higher than the corresponding grid values, you can notice that resizing stops to lower suitable values. For example, on the `x` axis, the lowest valid value to respect `maxWidth` and `grid[x]` constraints is 80. The same applies to the `y` axis.
+
+::: code-group
+<<< @/src/views/grid/grid-20x40-with-offset-10x20-max.vue#template[Template]
+<<< @/src/views/grid/grid-20x40-with-offset-10x20-max.vue#script[Script]
+<<< @/src/style/grid.scss[Style]
+:::
