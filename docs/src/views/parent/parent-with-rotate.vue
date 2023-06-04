@@ -2,7 +2,7 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">父级+旋转</div>
+    <div id="toolbar">Parent with rotation</div>
     <div class="container">
       <div :style="style">
         <VueDragResizeRotate :parent="true" :grid="[20, 20]" :rotatable="true" :r="45">

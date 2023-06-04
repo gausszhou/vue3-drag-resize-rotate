@@ -2,7 +2,7 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">活动状态下具有自定义类名的组件</div>
+    <div id="toolbar">Component with custom class name in active state</div>
     <div class="container">
       <VueDragResizeRotate class-name-active="my-active-class" class-name="my-class">
         <p>

@@ -2,11 +2,11 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">拖动组件触发事件dragging和停止拖拽dragstop</div>
+    <div id="toolbar">Drag the component to trigger the events @dragging or @dragstop</div>
     <div class="container">
       <VueDragResizeRotate :w="200" :h="200" :r="0" @dragging="onDrag" @dragstop="onDragStop">
         <p>
-          {{ dragging ? "你正在拖动" : "我就待在这里" }}
+          {{ dragging ? "you are dragging" : "i will stay here" }}
           <br />
           X: {{ x }} / Y: {{ y }}
         </p>

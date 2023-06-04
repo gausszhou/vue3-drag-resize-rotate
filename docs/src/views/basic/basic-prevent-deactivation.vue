@@ -6,16 +6,16 @@
     <div class="container">
       <VueDragResizeRotate :prevent-deactivation="true">
         <p>
-          设置
+          set the property
           <b>:prevent-deactivation</b>
-          属性，让组件不能取消激活状态
+          so that the component cannot be deactivated
         </p>
       </VueDragResizeRotate>
       <VueDragResizeRotate :prevent-deactivation="true">
         <p>
-          设置
+          set the property
           <b>:prevent-deactivation</b>
-          属性，让组件不能取消激活状态
+          so that the component cannot be deactivated
         </p>
       </VueDragResizeRotate>
     </div>

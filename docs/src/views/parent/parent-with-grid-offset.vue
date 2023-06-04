@@ -2,7 +2,7 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">父级限制+网格+偏移</div>
+    <div id="toolbar">Parent with grid offset</div>
     <div class="container">
       <div class="grid" :style="style">
         <VueDragResizeRotate :parent="true" :grid="[20, 20]" :x="10" :y="10" :h="400" :w="400">

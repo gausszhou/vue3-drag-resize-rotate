@@ -8,8 +8,8 @@
     </div>
     <div class="container">
       <VueDragResizeRotate :resizable="resizable">
-        <p v-if="resizable">现在可以调整大小了</p>
-        <p v-else>现在不可以调整大小</p>
+        <p v-if="resizable">Can now be resized</p>
+        <p v-else>Can't resize now</p>
       </VueDragResizeRotate>
     </div>
   </div>

@@ -1,7 +1,7 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">位置吸附对齐</div>
+    <div id="toolbar">Position adsorption</div>
     <div class="container">
       <VueDragResizeRotate
         :w="200"

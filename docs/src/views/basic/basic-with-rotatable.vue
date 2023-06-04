@@ -17,8 +17,8 @@
         :r="angle"
         :parent="true"
       >
-        <p v-if="rotatable">现在可以旋转，旋转角度为{{ angle }}</p>
-        <p v-else>现在不可以旋转</p>
+        <p v-if="rotatable">It can now be rotated by an angle of{{ angle }}</p>
+        <p v-else>Can't rotate now</p>
       </VueDragResizeRotate>
     </div>
   </div>

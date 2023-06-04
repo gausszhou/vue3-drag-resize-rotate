@@ -2,10 +2,10 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">组件插槽</div>
+    <div id="toolbar">Component slot</div>
     <div class="container">
       <VueDragResizeRotate>
-        <p>基本组件内插入表单</p>
+        <p>Insert form in base component</p>
         <form @submit.stop.prevent="onSubmit">
           <input type="text" name="input" value="Hello" />
           <button type="submit">Submit</button>

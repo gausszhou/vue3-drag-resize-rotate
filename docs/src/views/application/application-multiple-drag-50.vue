@@ -4,7 +4,7 @@
   <div class="view-box">
     <div id="toolbar">
       <label>
-        同时拖动多个内部元素(50个)
+        Simultaneously drag multiple internal elements (50)
         <input type="checkbox" name="sync" v-model="sync" />
         Synchronize (Use
         <b>ctrl</b>

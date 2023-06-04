@@ -20,9 +20,9 @@
         :parent="true"
         :scaleRatio="scaleRatio"
       >
-        <p>位置为({{ position.x }},{{ position.y }})</p>
-        <p>大小为({{ position.w }},{{ position.h }})</p>
-        <p>角度为{{ angle }}</p>
+        <p>Location({{ position.x }},{{ position.y }})</p>
+        <p>Size({{ position.w }},{{ position.h }})</p>
+        <p>Angle{{ angle }}</p>
       </VueDragResizeRotate>
     </div>
   </div>

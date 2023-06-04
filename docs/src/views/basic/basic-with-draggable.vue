@@ -8,8 +8,8 @@
     </div>
     <div class="container">
       <VueDragResizeRotate :draggable="draggable">
-        <p v-if="draggable">现在可以被拖动位置了，走起!!!</p>
-        <p v-else>虽然不能拖动位置，但是可以调整大小(默认开启)</p>
+        <p v-if="draggable">Now it can be dragged into place, let's go!!!</p>
+        <p v-else>Although the position cannot be dragged, the size can be adjusted (enabled by default)</p>
       </VueDragResizeRotate>
     </div>
   </div>

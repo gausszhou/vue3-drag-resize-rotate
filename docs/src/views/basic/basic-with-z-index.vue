@@ -9,9 +9,9 @@
     <div class="container">
       <VueDragResizeRotate :z="z" :x="150" :y="150" style="background-color: #ccc">
         <div>
-          通过
-          <b>:z属性</b>
-          <p>控制组件的z-index:{{ z }}层级</p>
+          Pass
+          <b>:z attribute</b>
+          <p>to control z-index:{{ z }}层级</p>
         </div>
       </VueDragResizeRotate>
       <div

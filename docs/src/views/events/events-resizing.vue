@@ -2,11 +2,11 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">调整大小触发事件resizing和停止调整resizestop</div>
+    <div id="toolbar">Resize the component to trigger the events @resizing or @resizestop</div>
     <div class="container">
       <VueDragResizeRotate :w="200" :h="200" :x="0" :y="0" :r="0" @resizing="onResize" @resizestop="onResizeStop">
         <p>
-          {{ resizing ? "你正在调整大小" : "这个大小还行" }}
+          {{ resizing ? "you are resizing" : "this size is okay" }}
           <br />
           X: {{ x }} / Y: {{ y }} - Width: {{ width }} / Height: {{ height }}
         </p>

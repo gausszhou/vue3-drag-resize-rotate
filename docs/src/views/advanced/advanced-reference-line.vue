@@ -2,7 +2,7 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">对齐时出现辅助线</div>
+    <div id="toolbar">Alignment helper lines</div>
     <div class="container">
       <VueDragResizeRotate
         :w="200"

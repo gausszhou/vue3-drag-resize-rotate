@@ -2,11 +2,11 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">调整大小时具有自定义类名的组件</div>
+    <div id="toolbar">Component with custom class name on resize</div>
     <div class="container">
       <VueDragResizeRotate class-name-resizing="my-resizing-class" class-name="my-class">
         <p>
-          同样组件处于被拉伸时，设置类名
+          When the same component is being stretched, set the class name
           <b>class-name-resizing</b>
           prop.
         </p>

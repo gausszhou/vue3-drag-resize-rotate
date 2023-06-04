@@ -2,7 +2,7 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">具有句柄自定义标记的组件</div>
+    <div id="toolbar">Components with handle custom tags</div>
     <div class="container">
       <VueDragResizeRotate class-name-handle="my-handle-class">
         <p>The first child will populate the default slot.</p>

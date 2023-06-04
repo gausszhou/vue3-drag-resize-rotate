@@ -2,7 +2,7 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">调整旋转角度触发事件rotating和rotatestop</div>
+    <div id="toolbar">Rotate the component to trigger the events @rotating or @rotatestop</div>
     <div class="container">
       <VueDragResizeRotate
         :w="200"

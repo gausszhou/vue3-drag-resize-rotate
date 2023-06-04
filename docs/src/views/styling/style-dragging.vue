@@ -2,11 +2,11 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">拖动时具有自定义类名的组件</div>
+    <div id="toolbar">Component with custom class name while dragging</div>
     <div class="container">
       <VueDragResizeRotate class-name-dragging="my-dragging-class" class-name="my-class">
         <p>
-          你也可以设置组件处于拖拽式的类名
+          You can also set the class name of the component in drag and drop
           <b>class-name-dragging</b>
         </p>
       </VueDragResizeRotate>

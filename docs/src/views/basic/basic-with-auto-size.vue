@@ -2,9 +2,9 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">自适应大小</div>
+    <div id="toolbar">Auto Size</div>
     <div class="container">
-      <VueDragResizeRotate w="auto" h="auto">随便填一点内容，我会自动适应大小</VueDragResizeRotate>
+      <VueDragResizeRotate w="auto" h="auto">Just fill in a little content, I will automatically adapt to the size</VueDragResizeRotate>
     </div>
   </div>
 </template>

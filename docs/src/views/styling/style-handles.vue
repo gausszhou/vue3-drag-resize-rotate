@@ -2,7 +2,7 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">具有自定义类名称句柄的组件</div>
+    <div id="toolbar">Components with custom class name handles</div>
     <div class="container">
       <VueDragResizeRotate class-name-handle="my-handle-class">
         <p>

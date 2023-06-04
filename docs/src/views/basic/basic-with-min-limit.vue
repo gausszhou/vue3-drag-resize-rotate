@@ -18,11 +18,11 @@
         @resizestop="onResize"
       >
         <div>
-          <p>基本组件，可以配置</p>
+          <p>Basic components, configurable</p>
           <b>minWidth</b>
-          和
+          and
           <b>minHeight</b>
-          属性
+          attributes
           <p>w:{{ w }},h:{{ h }}</p>
         </div>
       </VueDragResizeRotate>

@@ -11,9 +11,8 @@
     <div class="container">
       <VueDragResizeRotate :parent="true" :disableUserSelect="disableUserSelect1">
         <p>
-          你
           {{ disableUserSelect1 ? "不可以" : "可以" }}
-          选择组件内部的的文字，不妨双击试试!!!
+          Select the text inside the component, double-click to try
           <br />
           <b>:disableUserSelect</b>
           prop equal to {{ disableUserSelect1 }}.
@@ -21,9 +20,8 @@
       </VueDragResizeRotate>
       <VueDragResizeRotate :parent="true" :disableUserSelect="disableUserSelect2">
         <p>
-          你
           {{ disableUserSelect2 ? "不可以" : "可以" }}
-          选择组件内部的的文字，不妨双击试试!!!
+          Select the text inside the component, double-click to try
           <br />
           <b>:disableUserSelect</b>
           prop equal to {{ disableUserSelect2 }}.

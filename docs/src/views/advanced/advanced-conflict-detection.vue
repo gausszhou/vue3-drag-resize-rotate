@@ -1,7 +1,7 @@
 // #region template
 <template>
   <div class="view-box">
-    <div id="toolbar">位置冲突检测</div>
+    <div id="toolbar">Conflict Detection</div>
     <div class="container">
       <VueDragResizeRotate
         :w="200"
