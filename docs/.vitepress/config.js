@@ -20,7 +20,8 @@ export default defineConfig({
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('../', import.meta.url)),
-        '@root': fileURLToPath(new URL('../../', import.meta.url))
+        '@root': fileURLToPath(new URL('../../', import.meta.url)),
+        '@assets': fileURLToPath(new URL('../src/assets', import.meta.url))
       }
     }
   },
