@@ -1,4 +1,11 @@
-# 父级中具有网格约束的组件
+<parentWithGrid/>
 
-附加到网格的组件，不能在其父元素之外拖动或调整大小，使用prop <b>`：parent =“true”`</b>定义。 在这种情况下，父级的大小完全匹配网格。
+# Components with grid constraints in parent
 
+Components that are attached to the grid and cannot be dragged or resized outside of their parent element, defined using prop <b>`:parent="true"`</b>. In this case the size of the parent exactly matches the grid.
+
+::: code-group
+<<< @/src/views/parent/parent-with-grid.vue#template[Template]
+<<< @/src/views/parent/parent-with-grid.vue#script[Script]
+<<< @/src/style/grid.scss[Style]
+:::

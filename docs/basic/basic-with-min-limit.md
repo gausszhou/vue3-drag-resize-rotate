@@ -1,4 +1,10 @@
-# 具有最小高度和最小宽度的基本组件
+<basicWithMinLimit/>
 
-具有Min Height和Min Width基本组件的基本组件，最小高度和最小宽度分别由`:minw` 和`:minh` 属性控制。
+# Basic components with minimum height and minimum width
 
+A base component with Min Height and Min Width base components, the minimum height and width are controlled by the `:minw` and `:minh` properties respectively.
+
+::: code-group
+<<< @/src/views/basic/basic-with-min-limit.vue#template[Template]
+<<< @/src/views/basic/basic-with-min-limit.vue#script[Script]
+:::

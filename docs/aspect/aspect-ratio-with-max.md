@@ -1,4 +1,10 @@
-# 让组件具有宽高比和maxWidth，maxHeight
+<aspectRatioWithMax/>
 
-一个组件，<b>`lock-aspect-ratio` </b> prop和<b> maxWidth </b>设置为`300`，<b> maxHeight </b>设置为`250`。 请注意，锁定纵横比也会强制最大宽度为`250`。
+# Let the component have an aspect ratio, maxWidth and maxHeight
 
+A component with <b>`lock-aspect-ratio` </b> prop and <b>maxWidth</b> set to `300` and <b>maxHeight</b> set to `250`. Note that locking the aspect ratio also enforces a maximum width of `250`.
+
+::: code-group
+<<< @/src/views/aspect/aspect-ratio-with-max.vue#template[Template]
+<<< @/src/views/aspect/aspect-ratio-with-max.vue#script[Script]
+:::

@@ -1,4 +1,9 @@
-# 组件是否允许内部拖拽
+<basicEnableNativeDrag/>
 
-一个基本组件，`enable-native-drag`  prop设置为`true`，以允许组件内部元素的拖动行为。 您可以通过使用球拖动每个组件来查看差异。 默认值为`false`。
+# Whether the component allows internal dragging
 
+A base component with the `enable-native-drag` prop set to `true` to enable drag behavior for elements inside the component. You can see the differences by dragging each component with the ball. The default value is `false`.
+
+::: code-group
+<<< @/src/views/basic/basic-enable-native-drag.vue#template[Template]
+:::

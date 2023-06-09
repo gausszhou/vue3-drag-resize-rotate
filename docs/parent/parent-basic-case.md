@@ -1,4 +1,9 @@
-# 父元素的组件限制
+<parentBasicCase/>
 
-无法在其父元素之外拖动或调整大小的组件，使用prop <b>`：parent =“true”`</b>定义。
+# Component constraints on the parent element
 
+A component that cannot be dragged or resized outside of its parent element, defined with prop <b>`:parent="true"`</b>.
+
+::: code-group
+<<< @/src/views/parent/parent-basic-case.vue#template[Template]
+:::

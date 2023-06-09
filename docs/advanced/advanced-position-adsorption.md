@@ -1,4 +1,9 @@
-# 元素位置吸附对齐
+<advancedPositionAdsorption/>
 
-设置`:snap="true"`开启吸附功能和设置`:snapTolerance="20"`可控制吸附判断距离
+# Element position adsorption alignment
 
+Set `:snap="true"` to enable adsorption and set `:snapTolerance="20"` to control the adsorption distance.
+
+::: code-group
+<<< @/src/views/advanced/advanced-position-adsorption.vue#template[Template]
+:::

@@ -1,3 +1,10 @@
-# 具有最大高度和最大宽度的基本组件
+<basicWithMaxLimit/>
 
-具有Max Height和Max Width基本组件的基本组件，最大高度和最大宽度分别由 `:max-height` 和`:max-width` 属性控制。
+# Basic components with max height and max width
+
+A base component with Max Height and Max Width base components, the max height and max width are controlled by `:max-height` and `:max-width` properties respectively.
+
+::: code-group
+<<< @/src/views/basic/basic-with-max-limit.vue#template[Template]
+<<< @/src/views/basic/basic-with-max-limit.vue#script[Script]
+:::

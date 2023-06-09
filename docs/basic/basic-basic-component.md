@@ -1,4 +1,9 @@
-# 基本组件
+<basicBasicComponent/>
 
-最基本的组件，没有任何道具，甚至可以在父元素之外自由移动。
+# Basic components
 
+The most basic component, without any props, can even move freely outside the parent element.
+
+::: code-group
+<<< @/src/views/basic/basic-basic-component.vue#template[Template]
+:::

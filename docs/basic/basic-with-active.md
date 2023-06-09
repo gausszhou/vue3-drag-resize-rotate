@@ -1,4 +1,10 @@
-# 外部控制组件的活动状态
+<basicWithActive/>
 
-一个基本组件，带有<b>`active` </b> prop，用于控制组件外部的活动状态。
+# Active state of the external control component
 
+A base component with an <b>`active` </b> prop to control the active state outside the component.
+
+::: code-group
+<<< @/src/views/basic/basic-with-active.vue#template[Template]
+<<< @/src/views/basic/basic-with-active.vue#script[Script]
+:::

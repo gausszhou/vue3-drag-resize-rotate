@@ -1,4 +1,9 @@
-# 元素对齐辅助线
+<advancedReferenceLine/>
 
-返回参数是一个Object,里面包含`vLine`与`hLine`，具体使用参考下面代码。
+# Element alignment helper line
 
+The return parameter is an Object, which contains `vLine` and `hLine`, refer to the following code for details.
+
+::: code-group
+<<< @/src/views/advanced/advanced-reference-line.vue#template[Template]
+:::

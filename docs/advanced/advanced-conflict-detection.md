@@ -1,4 +1,9 @@
-# 冲突检测
+<advancedConflictDetection/>
 
-开启冲突检测时，各个可拖拽组件之间不可重叠，冲突后当前元素回到原来的位置
+# Conflict detection
 
+When conflict detection is enabled, each draggable component cannot overlap with each other, and the current element returns to its original position after a conflict.
+
+::: code-group
+<<< @/src/views/advanced/advanced-conflict-detection.vue#template[Template]
+:::

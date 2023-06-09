@@ -1,4 +1,11 @@
-# 允许放缩 
+<basicWithScale/>
 
-> 放缩时，建议保持父元素盒子和vue-drag-resize-rotate放缩值保持一致
+# allow scaling
 
+> When zooming, it is recommended to keep the zoom value of the parent element box and vue-drag-resize-rotate consistent
+
+::: code-group
+<<< @/src/views/basic/basic-with-scale.vue#template[Template]
+<<< @/src/views/basic/basic-with-scale.vue#script[Script]
+<<< @/src/views/basic/basic-with-scale.vue#style[Style]
+:::

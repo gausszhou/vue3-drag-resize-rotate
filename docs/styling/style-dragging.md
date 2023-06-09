@@ -1,4 +1,10 @@
-# 拖动时具有自定义类名的组件
+<styleDragging/>
 
-在拖动时具有自定义类名的组件，由prop <b>`class-name-dragging` </b>提供。
+# Components with custom class names when dragging
 
+A component with a custom class name when dragging, provided by prop <b>`class-name-dragging` </b>.
+
+::: code-group
+<<< @/src/views/styling/style-dragging.vue#template[Template]
+<<< @/src/views/styling/style-dragging.vue#style[Style]
+:::

@@ -1,4 +1,10 @@
-# 拖动位置和拖动事件
+<eventsDragging/>
 
-拖动组件时会发出`dragging(x,y)`事件。 拖动停止时会发生`dragstop(x,y)`事件。
+# Drag position and drag event
 
+The `dragging(x,y)` event is emitted when the component is being dragged. The `dragstop(x,y)` event occurs when dragging stops.
+
+::: code-group
+<<< @/src/views/events/events-dragging.vue#template[Template]
+<<< @/src/views/events/events-dragging.vue#script[Script]
+:::

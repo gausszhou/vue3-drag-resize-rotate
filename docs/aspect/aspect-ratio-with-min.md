@@ -1,4 +1,10 @@
-# 让组件具有宽高比和minHeight，minWidth
+<aspectRatioWithMin/>
 
-一个组件，<b>`lock-aspect-ratio` </b> prop和最小高度设置为`100`，最小宽度设置为`50`.请注意，锁定纵横比也会强制最小宽度为100（条件：1 / 1）。
+# Let the component have an aspect ratio, minHeight and minWidth
 
+A component with a <b>`lock-aspect-ratio` </b> prop and a min-height set to `100` and a min-width set to `50`. Note that locking the aspect ratio also enforces a min-width of 100 (condition : 1/1).
+
+::: code-group
+<<< @/src/views/aspect/aspect-ratio-with-min.vue#template[Template]
+<<< @/src/views/aspect/aspect-ratio-with-min.vue#script[Script]
+:::
