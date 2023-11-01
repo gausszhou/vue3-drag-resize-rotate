@@ -517,20 +517,28 @@ export default {
       }
     },
     minWidth(val) {
-      if (val > 0 && val <= this.width) {
+      if (val > 0) {
         this.minW = val;
       }
+      this.correctSize();
     },
     minHeight(val) {
-      if (val > 0 && val <= this.height) {
+      if (val > 0) {
         this.minH = val;
       }
+      this.correctSize();
     },
     maxWidth(val) {
-      this.maxW = val;
+      if(val > 0) {
+        this.maxW = val;
+      }
+      this.correctSize()
     },
     maxHeight(val) {
-      this.maxH = val;
+      if (val > 0) {
+        this.maxH = val;
+      }
+      this.correctSize()
     },
     w(val) {
       if (this.resizing || this.dragging) {
@@ -607,6 +615,22 @@ export default {
     removeEvent(window, "resize", this.checkParentSize);
   },
   methods: {
+    // 修正宽高
+    correctSize() {
+      if (this.width < this.minW) {
+        this.width = this.minW;
+      }
+      if (this.height < this.minH) {
+        this.height = this.minH;
+      }
+      if (this.height > this.maxH) {
+        this.height = this.maxH;        
+      }
+      if (this.width > this.maxW) {
+        this.width = this.maxW;
+      }
+      $emit(this, "resizestop", this.left, this.top, this.width, this.height);
+    },
     // 重置边界和鼠标状态
     resetBoundsAndMouseState() {
       this.mouseClickPosition = {
@@ -671,6 +695,7 @@ export default {
       eventsFor = events.touch;
       this.elementDown(e);
     },
+    // 鼠标左键按下
     elementMouseDown(e) {
       eventsFor = events.mouse;
       this.elementDown(e);
@@ -1102,7 +1127,6 @@ export default {
       }
       // 纵横比限制
       if (this.lockAspectRatio) {
-        console.log(this.lockAspectRatio, this.aspectFactor);
         if (newW / newH > this.aspectFactor) {
           newW = newH * this.aspectFactor;
         } else {
