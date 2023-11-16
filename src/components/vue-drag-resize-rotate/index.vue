@@ -328,9 +328,6 @@ export default {
       // 新增 表明组件是否正处于旋转状态
       rotating: false,
       zIndex: this.z,
-      // 新增 保存中心点位置，用于计算旋转的方向矢量
-      lastCenterX: 0,
-      lastCenterY: 0,
       // 父元素左上角的坐标值
       parentX: 0,
       parentY: 0,
@@ -559,28 +556,24 @@ export default {
       this.changeHeight(val);
     },
   },
-  created: function () {
-    if (this.maxWidth && this.minWidth > this.maxWidth)
+  created() {
+    if (this.maxWidth && this.minWidth > this.maxWidth) {
       console.warn("[Vdr warn]: Invalid prop: minWidth cannot be greater than maxWidth");
-    if (this.maxWidth && this.minHeight > this.maxHeight)
+    }
+
+    if (this.maxHeight && this.minHeight > this.maxHeight) {
       console.warn("[Vdr warn]: Invalid prop: minHeight cannot be greater than maxHeight");
-    this.elmX = 0;
-    this.elmY = 0;
-    this.elmW = 0;
-    this.elmH = 0;
-    this.lastCenterX = 0;
-    this.lastCenterY = 0;
-    this.fixedXName = "";
-    this.fixedYName = "";
-    this.fixedX = 0;
-    this.fixedY = 0;
-    this.TL = {};
-    this.TR = {};
-    this.BL = {};
-    this.BR = {};
+    }
+
+    this.Center = {x: 0, y: 0}
+    this.TL = { x: 0, y: 0};
+    this.TR = { x: 0, y: 0};
+    this.BL = { x: 0, y: 0};
+    this.BR = { x: 0, y: 0};
+
     this.resetBoundsAndMouseState();
   },
-  mounted: function () {
+  mounted() {
     if (!this.enableNativeDrag) {
       this.$el.ondragstart = () => false;
     }
@@ -806,10 +799,11 @@ export default {
       }
       // 新增保存矩形信息
       // 获取父元素的位置大小信息
-      let { top, left, width, height } = this.$el.getBoundingClientRect();
+      const rect = this.$el.getBoundingClientRect(); // 包围盒
+      const { top, left, width, height } = rect;
       // 保存旋转中心的绝对坐标
-      this.lastCenterX = window.pageXOffset + left + width / 2;
-      this.lastCenterY = window.pageYOffset + top + height / 2;
+      this.Center.x = window.pageXOffset + left + width / 2;
+      this.Center.y = window.pageYOffset + top + height / 2;
       // 保存四个顶点的坐标
       let oleft = this.left;
       let otop = this.top;
@@ -936,8 +930,8 @@ export default {
     handleRotate(e) {
       // 获取方向向量，得到旋转角度
       const { x: mouseX, y: mouseY } = this.getMouseCoordinate(e);
-      const x = mouseX - this.lastCenterX;
-      const y = mouseY - this.lastCenterY;
+      const x = mouseX - this.Center.x;
+      const y = mouseY - this.Center.y;
       this.rotate = (getAngle(x, y) + 90) % 360;
       $emit(this, "rotating", this.rotate);
       // 元素移动
