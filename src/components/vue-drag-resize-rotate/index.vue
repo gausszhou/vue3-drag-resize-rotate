@@ -704,6 +704,12 @@ export default {
         if (this.onDragStart(e) === false) {
           return;
         }
+        
+        if (!this.enabled) {
+          this.enabled = true;
+          $emit(this, "activated");
+          $emit(this, "update:active", true);
+        }
         if (
           (this.dragHandle && !matchesSelectorToParentElements(target, this.dragHandle, this.$el)) ||
           (this.dragCancel && matchesSelectorToParentElements(target, this.dragCancel, this.$el))
@@ -711,11 +717,7 @@ export default {
           this.dragging = false;
           return;
         }
-        if (!this.enabled) {
-          this.enabled = true;
-          $emit(this, "activated");
-          $emit(this, "update:active", true);
-        }
+
         if (this.draggable) {
           this.dragging = true;
         }
