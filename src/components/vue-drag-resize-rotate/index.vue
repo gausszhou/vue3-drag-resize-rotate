@@ -739,6 +739,7 @@ export default {
     },
     // 计算移动范围
     calcDragLimits() {
+      this.checkParentSize();
       // 开启旋转时，不在进行边界限制
       if (this.rotatable) {
         return {
