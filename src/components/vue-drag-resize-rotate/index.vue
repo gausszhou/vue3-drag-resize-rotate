@@ -596,6 +596,7 @@ export default {
     addEvent(document.documentElement, "mousedown", this.deselect);
     addEvent(document.documentElement, "touchend touchcancel", this.deselect);
     //  窗口变化时，检查容器大小
+    this.checkParentSize()
     addEvent(window, "resize", this.checkParentSize);
   },
   beforeUnmount: function () {
