@@ -10,14 +10,14 @@ import "./style/index.scss";
 
 const app = createApp(App);
 
-// import VueDragReSizeRotate from "./components/vue-drag-resize-rotate/index.vue";
+import VueDragResizeRotate from "./components/vue-drag-resize-rotate/index.vue";
 
 // esm
-import VueDragResizeRotate from "../lib/bundle.esm.js";
-import  "../lib/bundle.esm.css";
+// import VueDragResizeRotate from "../lib/bundle.esm.js";
+// import  "../lib/bundle.esm.css";
 
 // use
-app.use(VueDragResizeRotate);
+// app.use(VueDragResizeRotate);
 // or component
 app.component(VueDragResizeRotate.name, VueDragResizeRotate);
 
