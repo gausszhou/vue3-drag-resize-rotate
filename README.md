@@ -44,7 +44,7 @@ app.mount("#app");
 
 ## Emits
 
-| Event          | Description              |
+| Event         | Description              |
 | ------------- | ------------------------ |
 | dragging      | on dragging              |
 | dragstop      | on drag stop             |
@@ -52,6 +52,8 @@ app.mount("#app");
 | resizestop    | on resize stop           |
 | rotating      | on rotating              |
 | rotatestop    | on rotate stop           |
+| activated     | on activeed              |
+| deactivated   | on deactiveed            |
 | refLineParams | on reference line change |
 
 ## Code Reference
