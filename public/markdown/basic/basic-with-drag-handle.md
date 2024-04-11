@@ -35,7 +35,6 @@ export default {
       const indexs  = this.list.map(item => item.zIndex);
       const maxIndex = Math.max(...indexs);
       this.list[index].zIndex = maxIndex + 1;
-      console.log(this.list)
     }
   }
 };
