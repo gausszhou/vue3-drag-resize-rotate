@@ -1497,7 +1497,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .vue-drag-resize-rotate {
   touch-action: none;
   position: absolute;
@@ -1505,46 +1505,46 @@ export default {
   border: 1px dashed;
 }
 
-.handle {
+.vue-drag-resize-rotate .handle {
   box-sizing: border-box;
   position: absolute;
   background: #ffffff;
   border: 1px solid #333;
 }
 
-.handle-tl {
+.vue-drag-resize-rotate .handle-tl {
   cursor: nw-resize;
 }
 
-.handle-tm {
+.vue-drag-resize-rotate .handle-tm {
   cursor: n-resize;
 }
 
-.handle-tr {
+.vue-drag-resize-rotate .handle-tr {
   cursor: ne-resize;
 }
 
-.handle-ml {
+.vue-drag-resize-rotate .handle-ml {
   cursor: w-resize;
 }
 
-.handle-mr {
+.vue-drag-resize-rotate .handle-mr {
   cursor: e-resize;
 }
 
-.handle-bl {
+.vue-drag-resize-rotate .handle-bl {
   cursor: sw-resize;
 }
 
-.handle-bm {
+.vue-drag-resize-rotate .handle-bm {
   cursor: s-resize;
 }
 
-.handle-br {
+.vue-drag-resize-rotate .handle-br {
   cursor: se-resize;
 }
 
-.handle-rot {
+.vue-drag-resize-rotate .handle-rot {
   transform: translateX(-50%);
   cursor: grab;
   display: inline-block;
@@ -1554,8 +1554,8 @@ export default {
   vertical-align: middle;
 }
 
-.handle-rot:before,
-.handle-rot:after {
+.vue-drag-resize-rotate .handle-rot:before,
+.vue-drag-resize-rotate .handle-rot:after {
   content: "";
   box-sizing: inherit;
   position: absolute;
@@ -1564,7 +1564,7 @@ export default {
   transform: translate(-50%, -50%);
 }
 
-.handle-rot:before {
+.vue-drag-resize-rotate .handle-rot:before {
   width: 1em;
   height: 1em;
   border: 2px solid #333;
